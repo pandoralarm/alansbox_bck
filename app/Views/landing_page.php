@@ -18,7 +18,7 @@
 
     <div class="row" style="height: 10vh;">
         <div class="col text-center">
-            <div class="btn btn-outline-dark text-center">Find out More</div>
+            <div id="more" class="btn btn-outline-dark text-center">Find out More</div>
         </div>
     </div>
 
