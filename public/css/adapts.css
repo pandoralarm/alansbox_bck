@@ -16,7 +16,14 @@ body {
     font-family: 'Poppins';font-size: 64px;font-weight: 900;font-style: italic;
     position: relative;
     left: -200vw;
+    
 }
+
+.title:hover {
+    cursor: pointer;
+}
+
+
 #more {
   opacity: 0;
 }

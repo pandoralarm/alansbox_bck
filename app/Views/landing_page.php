@@ -4,7 +4,7 @@
 
 
 
-    <section class="intro">
+    <section id="intro" class="intro">
     <canvas id="canvas-basic"></canvas>
         
         <!-- 1ST SLIDE -->
@@ -40,40 +40,40 @@
     </section>
 
     <!-- 2ND SLIDE  -->
-    <section id="anxwer">
+    <section id="works">
 
 
-        <div class="row" style="min-width: 500vw; background-color: #edde6d;" >
+        <div class="row" style="min-width: 500vw; " >
 
             <div class="col text-center text-white mx-auto">
-                <div class="text-center title t-1 my-auto" style="height: 10vh;"> 
+                <div class="text-center title t-1" style="height: 10vh; background-color: #edde6d;"> 
                     SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS 
                 </div>
-                <div class="text-center title t-2" style="height: 10vh;"> 
+                <div class="text-center title t-2" style="height: 10vh; background-color: #edde6d;"> 
                     SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS 
                 </div>
-                <div class="text-center title t-3" style="height: 10vh;"> 
+                <div class="text-center title t-3" style="height: 10vh; background-color: #edde6d;"> 
                     SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS 
                 </div>
-                <div class="text-center title t-4" style="height: 10vh;"> 
+                <div class="text-center title t-4" style="height: 10vh; background-color: #edde6d;"> 
                     SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS 
                 </div>
-                <div class="text-center title t-5" style="height: 10vh;"> 
+                <div class="text-center title t-5" style="height: 10vh; background-color: #edde6d;"> 
                     SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS 
                 </div>
-                <div class="text-center title t-6" style="height: 10vh;"> 
+                <div class="text-center title t-6" style="height: 10vh; background-color: #edde6d;"> 
                     SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS 
                 </div>
-                <div class="text-center title t-7" style="height: 10vh;"> 
+                <div class="text-center title t-7" style="height: 10vh; background-color: #edde6d;"> 
                     SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS 
                 </div>
-                <div class="text-center title t-8" style="height: 10vh;"> 
+                <div class="text-center title t-8" style="height: 10vh; background-color: #edde6d;"> 
                     SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS 
                 </div>
-                <div class="text-center title t-9" style="height: 10vh;"> 
+                <div class="text-center title t-9" style="height: 10vh; background-color: #edde6d;"> 
                     SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS 
                 </div>
-                <div class="text-center title t-10" style="height: 10vh;"> 
+                <div class="text-center title t-10" style="height: 10vh; background-color: #edde6d;"> 
                     SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS SELECTED WORKS 
                 </div>
             </div>

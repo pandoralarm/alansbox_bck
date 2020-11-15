@@ -108,11 +108,26 @@ $(document).ready(function () {
         $('body').css('overflow-y','auto');
         $("body,html").animate(
             {
-              scrollTop: $("#anxwer").offset().top
+              scrollTop: $("#works").offset().top
             },
             4000 //speed
           );
+        $('.title').css('transition', 'none');
     });
+
+    $('#works').waypoint(function() {
+        $('.title').css('transition', 'transform 1s ease-in-out');
+
+        var vWidth = $(window).width()/10;
+        var t10w = $('.t-10').width();
+
+        var wScroll10 = $(this).scrollTop();
+            $(".t-10").delay(2000).animate({
+            left: (t10w/5) - vWidth
+        },3000);
+        }, { offset: 'bottom-in-view' 
+    });
+
 
     $(window).scroll(function() {
         var scrollTop = $(this).scrollTop();
@@ -126,54 +141,54 @@ $(document).ready(function () {
             }
         });
 
-        var wScroll = $(this).scrollTop();
+        var wScroll1 = $(this).scrollTop();
             $(".t-1").css({
-            transform: "translateX(+" + wScroll / 450 + "%)"
+            transform: "translateX(+" + wScroll1 / 450 + "%)"
         });
 
-        var wScroll = $(this).scrollTop();
+        var wScroll2 = $(this).scrollTop();
             $(".t-2").css({
-            transform: "translateX(-" + wScroll / 440 + "%)"
+            transform: "translateX(-" + wScroll2 / 440 + "%)"
         });
 
-        var wScroll = $(this).scrollTop();
+        var wScroll3 = $(this).scrollTop();
             $(".t-3").css({
-            transform: "translateX(+" + wScroll / 445 + "%)"
+            transform: "translateX(+" + wScroll3 / 445 + "%)"
         });
 
-        var wScroll = $(this).scrollTop();
+        var wScroll4 = $(this).scrollTop();
             $(".t-4").css({
-            transform: "translateX(-" + wScroll / 455 + "%)"
+            transform: "translateX(-" + wScroll4 / 455 + "%)"
         });
 
-        var wScroll = $(this).scrollTop();
+        var wScroll5 = $(this).scrollTop();
             $(".t-5").css({
-            transform: "translateX(+" + wScroll / 450 + "%)"
+            transform: "translateX(+" + wScroll5 / 450 + "%)"
         });
 
-        var wScroll = $(this).scrollTop();
+        var wScroll6 = $(this).scrollTop();
             $(".t-6").css({
-            transform: "translateX(-" + wScroll / 445 + "%)"
+            transform: "translateX(-" + wScroll6 / 445 + "%)"
         });
     
-        var wScroll = $(this).scrollTop();
+        var wScroll7 = $(this).scrollTop();
             $(".t-7").css({
-            transform: "translateX(+" + wScroll / 455 + "%)"
+            transform: "translateX(+" + wScroll7 / 455 + "%)"
         });
     
-        var wScroll = $(this).scrollTop();
+        var wScroll8 = $(this).scrollTop();
             $(".t-8").css({
-            transform: "translateX(-" + wScroll / 445 + "%)"
+            transform: "translateX(-" + wScroll8 / 445 + "%)"
         });
 
-        var wScroll = $(this).scrollTop();
+        var wScroll9 = $(this).scrollTop();
             $(".t-9").css({
-            transform: "translateX(+" + wScroll / 450 + "%)"
+            transform: "translateX(+" + wScroll9 / 450 + "%)"
         });
     
-        var wScroll = $(this).scrollTop();
+        var wScroll10 = $(this).scrollTop();
             $(".t-10").css({
-            transform: "translateX(-" + wScroll / 445 + "%)"
+            transform: "translateX(-" + wScroll10 / 445 + "%)"
         });
 
 
