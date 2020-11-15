@@ -41,11 +41,25 @@ $(document).ready(function () {
                         'and this site is my portfolio.'   ],
             showCursor: false,
             contentType: 'html',
+            typeSpeed: 15,
+            backSpeed: 25,
+            loop: false,
+            smartBackspace: true // Default value
+          });
+
+        //   $(".element").Typed(options);
+
+    };
+
+    function runhelp() {
+        var options = new Typed('.help', {
+            strings: ['Click anwhere to continue'   ],
+            showCursor: false,
+            contentType: 'html',
             typeSpeed: 10,
             backDelay: 500,
             backSpeed: 35,
-            loop: false,
-            smartBackspace: true // Default value
+            loop: false
           });
 
         //   $(".element").Typed(options);
@@ -58,11 +72,19 @@ $(document).ready(function () {
 
         rungrad();
         runtype();
+        runhelp();
 
-        $('#more').delay(8000).animate({ opacity: 1}, 2000);
 
+
+        $('.help').delay(10000).animate({ opacity: 1}, 1500);
     };
 
+    $('.intro-parts').click(function (e) { 
+        e.preventDefault();
+        $('#more').animate({ opacity: 1}, 500);
+
+        $('.help').animate({ opacity: 0}, 500);
+    });
 
     
     //Roll Into
@@ -70,7 +92,25 @@ $(document).ready(function () {
 
     var image = document.getElementsByClassName('thumbnail');
     new simpleParallax(image, {
-        delay: .6,
-        transition: 'cubic-bezier(0,0,0,1)'
+        delay: .1,
+        scale: 1.2
+    });
+
+    var text = document.getElementsByClassName('title');
+    new simpleParallax(text, {
+	    orientation: 'right'
+    });
+    
+
+
+    $('#more').click(function (e) { 
+        e.preventDefault();
+        $('body').css('overflow','auto');
+        $("body,html").animate(
+            {
+              scrollTop: $("#anxwer").offset().top
+            },
+            1500 //speed
+          );
     });
 });

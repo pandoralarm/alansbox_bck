@@ -13,23 +13,9 @@
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Source Sans Pro' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Source Code Pro' rel='stylesheet'>
-
+    <link href='https://fonts.googleapis.com/css?family=Yatra One' rel='stylesheet'>
     <style>
-      body {
-          font-family: 'Source Sans Pro';font-size: 22px;
-      }
-
-      .web {
-          font-family: 'Source Code Pro';font-size: 36px;
-      }
-
-      .grap {
-          font-family: 'Poppins';font-size: 36px;
-      }
-
-      #more {
-        opacity: 0;
-      }
+      
     </style>
     <title>Its Alan's Box!</title>
   </head>
