@@ -79,7 +79,7 @@ $(document).ready(function () {
         $('.help').delay(10000).animate({ opacity: 1}, 1500);
     };
 
-    $('.intro-parts').click(function (e) { 
+    $('.intro').click(function (e) { 
         e.preventDefault();
         $('#more').animate({ opacity: 1}, 500);
 
@@ -105,12 +105,82 @@ $(document).ready(function () {
 
     $('#more').click(function (e) { 
         e.preventDefault();
-        $('body').css('overflow','auto');
+        $('body').css('overflow-y','auto');
         $("body,html").animate(
             {
               scrollTop: $("#anxwer").offset().top
             },
-            1500 //speed
+            4000 //speed
           );
     });
+
+    $(window).scroll(function() {
+        var scrollTop = $(this).scrollTop();
+      
+        $('.intro').css({
+            opacity: function() {
+                var elementHeight = $(this).height(),
+                    opacity = (((elementHeight - scrollTop) / elementHeight) * 1.5);
+                    console.log(opacity);
+                return opacity;
+            }
+        });
+
+        var wScroll = $(this).scrollTop();
+            $(".t-1").css({
+            transform: "translateX(+" + wScroll / 450 + "%)"
+        });
+
+        var wScroll = $(this).scrollTop();
+            $(".t-2").css({
+            transform: "translateX(-" + wScroll / 440 + "%)"
+        });
+
+        var wScroll = $(this).scrollTop();
+            $(".t-3").css({
+            transform: "translateX(+" + wScroll / 445 + "%)"
+        });
+
+        var wScroll = $(this).scrollTop();
+            $(".t-4").css({
+            transform: "translateX(-" + wScroll / 455 + "%)"
+        });
+
+        var wScroll = $(this).scrollTop();
+            $(".t-5").css({
+            transform: "translateX(+" + wScroll / 450 + "%)"
+        });
+
+        var wScroll = $(this).scrollTop();
+            $(".t-6").css({
+            transform: "translateX(-" + wScroll / 445 + "%)"
+        });
+    
+        var wScroll = $(this).scrollTop();
+            $(".t-7").css({
+            transform: "translateX(+" + wScroll / 455 + "%)"
+        });
+    
+        var wScroll = $(this).scrollTop();
+            $(".t-8").css({
+            transform: "translateX(-" + wScroll / 445 + "%)"
+        });
+
+        var wScroll = $(this).scrollTop();
+            $(".t-9").css({
+            transform: "translateX(+" + wScroll / 450 + "%)"
+        });
+    
+        var wScroll = $(this).scrollTop();
+            $(".t-10").css({
+            transform: "translateX(-" + wScroll / 445 + "%)"
+        });
+
+
+        
+    });
+      
+/*     $('#anxwer').waypoint(function() {
+        $(".t-2,.t-3,.t-4,.t-5,.t-6,.t-7,.t-8,.t-9,.t-10").fadeOut();
+     }, { offset: 'bottom-in-view' });   */ 
 });
