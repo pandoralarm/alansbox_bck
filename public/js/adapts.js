@@ -10,11 +10,11 @@ $(document).ready(function () {
                 "default-state": {
                     gradients: [
                         ['#FFFFFF', '#FFFFFF'],
-                        ['#E4E5E6', '#00416A'],
-                        ['#E4E5E6', '#00416A'],
+                        ['#E4E5E6', '#333333'],
+                        ['#E4E5E6', '#333333'],
                         ['#E4E5E6', '#E4E5E6'],
-                        ['#536976', '#E4E5E6'],
-                        ['#536976', '#E4E5E6']   
+                        ['#333333', '#E4E5E6'],
+                        ['#333333', '#E4E5E6']   
                     ]
                 }
             }
@@ -90,14 +90,16 @@ $(document).ready(function () {
     //Roll Into
     intro();
 
+
+
     $('#more').click(function (e) { 
         e.preventDefault();
 
        $('.intro').addClass('zooms');
        $('.intro').animate({ opacity: 0}, 2000, function() {
             $('.intro').css('display', 'none');
-            $('body').css('overflow-y', 'auto');
-            $('#main').css('display', 'block');
+            $('body').css('overflow-y', 'scroll');
+            $('#main').css('display', 'inline');
             $('#main').animate({ opacity : 1 }, 1000);
        });
 
@@ -124,19 +126,6 @@ $(document).ready(function () {
 
     headtype();
 
-    var waypoint = new Waypoint({
-        element: document.getElementById('headnav'),
-        handler: function(direction) {
-            $('#pronav').toggleClass('navshow');
-        }
-    });
-
-    var waypoint = new Waypoint({
-        element: document.getElementById('pronav'),
-        handler: function(direction) {
-            $('#tasknav').toggleClass('navshow');
-        }
-    });
 
 
     var images = document.querySelectorAll('img');
