@@ -5,7 +5,7 @@ $(document).ready(function () {
         var granimInstance = new Granim({
             element: '#canvas-basic',
             direction: 'diagonal',
-            isPausedWhenNotInView: true,
+            isPausedWhenNotInView: false,
             states : {
                 "default-state": {
                     gradients: [
@@ -47,13 +47,14 @@ $(document).ready(function () {
             smartBackspace: true // Default value
           });
 
+          console.log('HERE');
         //   $(".element").Typed(options);
 
     };
 
     function runhelp() {
         var options = new Typed('.help', {
-            strings: ['Click anwhere to continue'   ],
+            strings: ['Click anywhere to continue'   ],
             showCursor: false,
             contentType: 'html',
             typeSpeed: 10,
@@ -61,7 +62,6 @@ $(document).ready(function () {
             backSpeed: 35,
             loop: false
           });
-
         //   $(".element").Typed(options);
 
     };
@@ -86,116 +86,45 @@ $(document).ready(function () {
         $('.help').animate({ opacity: 0}, 500);
     });
 
-    
+   
     //Roll Into
     intro();
 
-    var image = document.getElementsByClassName('thumbnail');
-    new simpleParallax(image, {
-        delay: .1,
-        scale: 1.2
-    });
-
-    var text = document.getElementsByClassName('title');
-    new simpleParallax(text, {
-	    orientation: 'right'
-    });
-    
-
-
     $('#more').click(function (e) { 
         e.preventDefault();
-        $('body').css('overflow-y','auto');
-        $("body,html").animate(
-            {
-              scrollTop: $("#works").offset().top
-            },
-            4000 //speed
-          );
-        $('.title').css('transition', 'none');
-    });
 
-    $('#works').waypoint(function() {
-        $('.title').css('transition', 'transform 1s ease-in-out');
-
-        var vWidth = $(window).width()/10;
-        var t10w = $('.t-10').width();
-
-        var wScroll10 = $(this).scrollTop();
-            $(".t-10").delay(2000).animate({
-            left: (t10w/5) - vWidth
-        },3000);
-        }, { offset: 'bottom-in-view' 
-    });
-
-
-    $(window).scroll(function() {
-        var scrollTop = $(this).scrollTop();
-      
-        $('.intro').css({
-            opacity: function() {
-                var elementHeight = $(this).height(),
-                    opacity = (((elementHeight - scrollTop) / elementHeight) * 1.5);
-                    console.log(opacity);
-                return opacity;
-            }
-        });
-
-        var wScroll1 = $(this).scrollTop();
-            $(".t-1").css({
-            transform: "translateX(+" + wScroll1 / 450 + "%)"
-        });
-
-        var wScroll2 = $(this).scrollTop();
-            $(".t-2").css({
-            transform: "translateX(-" + wScroll2 / 440 + "%)"
-        });
-
-        var wScroll3 = $(this).scrollTop();
-            $(".t-3").css({
-            transform: "translateX(+" + wScroll3 / 445 + "%)"
-        });
-
-        var wScroll4 = $(this).scrollTop();
-            $(".t-4").css({
-            transform: "translateX(-" + wScroll4 / 455 + "%)"
-        });
-
-        var wScroll5 = $(this).scrollTop();
-            $(".t-5").css({
-            transform: "translateX(+" + wScroll5 / 450 + "%)"
-        });
-
-        var wScroll6 = $(this).scrollTop();
-            $(".t-6").css({
-            transform: "translateX(-" + wScroll6 / 445 + "%)"
-        });
-    
-        var wScroll7 = $(this).scrollTop();
-            $(".t-7").css({
-            transform: "translateX(+" + wScroll7 / 455 + "%)"
-        });
-    
-        var wScroll8 = $(this).scrollTop();
-            $(".t-8").css({
-            transform: "translateX(-" + wScroll8 / 445 + "%)"
-        });
-
-        var wScroll9 = $(this).scrollTop();
-            $(".t-9").css({
-            transform: "translateX(+" + wScroll9 / 450 + "%)"
-        });
-    
-        var wScroll10 = $(this).scrollTop();
-            $(".t-10").css({
-            transform: "translateX(-" + wScroll10 / 445 + "%)"
-        });
-
+       $('.intro').addClass('zooms');
+       $('.intro').animate({ opacity: 0}, 2000, function() {
+            $('.intro').css('display', 'none');
+            $('body').css('overflow-y', 'auto');
+            $('#main').animate({ opacity : 1 }, 1000);
+       });
 
         
     });
-      
-/*     $('#anxwer').waypoint(function() {
-        $(".t-2,.t-3,.t-4,.t-5,.t-6,.t-7,.t-8,.t-9,.t-10").fadeOut();
-     }, { offset: 'bottom-in-view' });   */ 
+
+
+    function headtype(){
+        var options = new Typed('#typed-4', {
+            strings: ['skills','skills', 'skills', 'skills',  
+                        'styles','styles','styles','styles',
+                         'intentions','intentions','intentions','intentions'],
+            showCursor: true,
+            contentType: 'html',
+            typeSpeed: 50,
+            backDelay: 300,
+            backSpeed: 35,
+            loop: true
+          });
+    };
+
+        //   $(".element").Typed(options);
+
+
+        var waypoint = new Waypoint({
+            element: document.getElementById('headnav'),
+            handler: function(direction) {
+              $('#pronav').toggleClass('navshow');
+            }
+          })
 });

@@ -51,10 +51,47 @@ img {
 }
 
 .intro{
+    z-index: 50;
     opacity: 1;
-  }
+    transition: transform 3s ease-in-out;
+}
+
+.mynav {
+    z-index: 10;
+}
+
+.navs {
+    color: white;
+    transition: all .5s ease;
+}
+
+
+.navshow{
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+
+#main {
+    opacity: 0;
+}
+
+.intro.zooms {
+    transform: scale(3);
+}
+
+
   
 
 /* * {
     border: 1px solid red;
 } */
+
+
+.mock {
+
+    background-image: url('../images/mocks.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
