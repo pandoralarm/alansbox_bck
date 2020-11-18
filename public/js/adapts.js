@@ -97,6 +97,7 @@ $(document).ready(function () {
        $('.intro').animate({ opacity: 0}, 2000, function() {
             $('.intro').css('display', 'none');
             $('body').css('overflow-y', 'auto');
+            $('#main').css('display', 'block');
             $('#main').animate({ opacity : 1 }, 1000);
        });
 
@@ -121,10 +122,26 @@ $(document).ready(function () {
         //   $(".element").Typed(options);
 
 
-        var waypoint = new Waypoint({
-            element: document.getElementById('headnav'),
-            handler: function(direction) {
-              $('#pronav').toggleClass('navshow');
-            }
-          })
+    headtype();
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('headnav'),
+        handler: function(direction) {
+            $('#pronav').toggleClass('navshow');
+        }
+    });
+
+    var waypoint = new Waypoint({
+        element: document.getElementById('pronav'),
+        handler: function(direction) {
+            $('#tasknav').toggleClass('navshow');
+        }
+    });
+
+
+    var images = document.querySelectorAll('img');
+    new simpleParallax(images);
+
+
+
 });

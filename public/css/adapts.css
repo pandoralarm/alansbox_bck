@@ -12,16 +12,10 @@ body {
     font-family: 'Yatra One';font-size: 36px;
 }
 
-.title {
-    font-family: 'Poppins';font-size: 64px;font-weight: 900;font-style: italic;
-    position: relative;
-    left: -200vw;
-    
+.paragraph {
+    font-family: 'Montserrat';font-size: 18px;
 }
 
-.title:hover {
-    cursor: pointer;
-}
 
 
 #more {
@@ -73,6 +67,7 @@ img {
 }
 
 #main {
+    display: none;
     opacity: 0;
 }
 
@@ -82,10 +77,29 @@ img {
 
 
   
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 
 /* * {
     border: 1px solid red;
-} */
+}
+ */
+.littlebouts {
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+
+    transition: all .5s ease;
+}
+
+.littlebouts:hover {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
 
 
 .mock {

@@ -75,6 +75,48 @@
                     <span>PROFILE</span>
                 </div>
             </div>
+
+            <div class="row" style="height: 28%;">
+                <div class="col my-auto">
+                    <div class="text-center paraghraph" style="font-size: 4rem; font-weight: 900;">HEADS UP!</div>
+                </div>
+            </div>
+
+
+            <div class="row paragraph "  style="height: 50%;">
+                <div class="col-8 border m-auto px-4 littlebouts">
+                    <p class="mt-4">
+                        I'M ALAN, A 20 YEARS OLD GUY, BORN AND LIVED IN INDONESIA. <br />
+                        STARTED TINKERING ON COMPUTER SOFTWARE AND HARDWARE SINCE I WAS 11. <br />
+                        HIGH MOTIVATION AND CURIOSITY ABOUT DESIGNS AND WHAT CONNECTS US ON INTERNET <br />
+                        LED ME HERE CHASING MY PASSION AND DOING WHAT I LOVE.
+                    </p>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br /<=>
+                    <p class="text-right">
+                        I'M A WEB DEVELOPER, I WORK AS FRONT-END AND BACK-END DEVELOPER. <br />
+                        BESIDES WHAT I COULD DO, I'M ALSO PAVING MY WAY TO BE A GRAPHIC <br />
+                        AND UI/UX DESIGNER. CURRENTLY TAKING STUDY ON <a href="https://ipb.ac.id/faculty/index/vocational-school/"> IPB UNIVERSITY VOCATIONAL SCHOOL </a><br />
+                        HELPS A LOT IN MY EFFORT TO EXCEL AND MASTER ON THESE MATTERS.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div id="projects" style="height: 200vh;">
+
+            <div id="tasknav" class="row navs mynav text-center sticky-top" style="height: 3.5%;">
+                <div class="col d-block my-auto">
+                    <span>RECENT PROJECTS</span>
+                </div>
+            </div>
+
         </div>
 
     </section>
