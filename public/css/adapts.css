@@ -17,6 +17,10 @@ body {
     font-family: 'Montserrat';font-size: 18px;
 }
 
+.title {
+    font-family: 'Poppins';font-size: 36px;font-weight: bold;
+}
+
 
 
 #more {
@@ -33,6 +37,49 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+.anxwer{
+    background-image: url('../images/anxwer.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.2);
+}
+
+.konco{
+    background-image: url('../images/konco.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.2);
+}
+
+
+.jline{
+    background-image: url('../images/jline.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.2);
+}
+
+
+.gnf{
+    background-image: url('../images/gnf.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.2);
+}
+
+
+.sitau{
+    background-image: url('../images/sitau.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scale(1.2);
 }
 
 

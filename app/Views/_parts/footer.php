@@ -1,5 +1,20 @@
 
 
+  <section id="footer">
+    <div class="row text-white" style="height: 10vh; background-color: black;">
+      <div class="col-8 text-center m-auto">
+        <a href="www.twitter.com/pandoralarm">Twitter</a>
+        <div class="d-inline" style="width: 30%;">&nbsp;</div>
+        <a href="www.linkedin.com/in/alanraihan">Linkedin</a>
+      </div>
+    </div>
+    <div class="row text-white" style="height: 5vh; background-color: black;">
+      <div class="col-8 text-center m-auto">
+         <span style="font-weight: 200;">&copy; 2020 Copyright: </span> <strong>alansbox.online</strong>
+      </div>
+    </div>
+  </section>
+
 
     <!-- BOOTSTRAP SCRIPSTS -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
